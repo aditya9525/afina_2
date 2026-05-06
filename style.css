@@ -2737,7 +2737,7 @@ h6 {
 }
 
 .mobile-view {
-    display: none;
+    display: none !important;
 }
 
 .faq-btn {
