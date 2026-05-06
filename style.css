@@ -2737,7 +2737,11 @@ h6 {
 }
 
 .mobile-view {
-    display: none !important;
+    display: none;
+}
+
+.v2-offer-section-container.mobile-view {
+    display: none
 }
 
 .faq-btn {
@@ -3226,18 +3230,21 @@ h6 {
     width: 100%;
 
 }
-.afina-star-hero{
+
+.afina-star-hero {
     margin: 0 !important;
 }
-.blend-card-contaienr{
+
+.blend-card-contaienr {
     width: 100%;
- position: absolute;
- bottom: 0;
-display: flex;
-justify-content: center;
-padding: 0 30px 30px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 30px 30px;
 
 }
+
 .review-card-blend {
     padding: 16px 20px;
     align-items: center;
@@ -3747,7 +3754,8 @@ padding: 0 30px 30px;
     .offer-section {
         max-width: 100%;
     }
-    .verifyed-img-section{
+
+    .verifyed-img-section {
         display: flex;
     }
 
@@ -3980,15 +3988,18 @@ padding: 0 30px 30px;
 }
 
 @media (max-width: 450px) {
-    .verifyed-img-section{
+    .verifyed-img-section {
         padding-top: 0;
     }
-    .brand-image-wrapper{
+
+    .brand-image-wrapper {
         display: none;
     }
+
     .nobody-cards-v2 {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .hero-wrapper {
         background: #f9f9f6;
 
@@ -4019,7 +4030,7 @@ padding: 0 30px 30px;
     }
 
     .meet-the-afina-filter-section {
-        background: #fafaf6  url(./images/fixable-bg-img.png);
+        background: #fafaf6 url(./images/fixable-bg-img.png);
         background-position: top;
         background-repeat: no-repeat;
         object-fit: cover;
@@ -4040,6 +4051,10 @@ padding: 0 30px 30px;
 
     .mobile-view {
         display: flex;
+    }
+
+    .v2-offer-section-container.mobile-view {
+        display: flex
     }
 
     .cont-left {
