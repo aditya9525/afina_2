@@ -4054,7 +4054,7 @@ h6 {
     }
 
     .v2-offer-section-container.mobile-view {
-        display: flex
+        display: flex;
     }
 
     .cont-left {
