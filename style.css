@@ -378,7 +378,7 @@ h6 {
 }
 
 .cont-left {
-    max-width: 601px;
+    max-width: 616px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1295,6 +1295,9 @@ h6 {
     font-weight: 600;
     font-family: "poppins", sans-serif;
     text-align: center;
+}
+.transform-it{
+    font-style: normal;
 }
 
 .image-stack img:first-child {
