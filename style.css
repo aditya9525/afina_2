@@ -162,6 +162,22 @@ h6 {
     transition: color 0.2s;
 }
 
+.meet-the-afina-filter-section {
+    position: relative;
+}
+
+.meet-the-afina-filter-section::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: black;
+    height: 91px;
+    left: 50%;
+    transform: translate(0, 50%);
+    top: -91px;
+
+}
+
 .footer-link:hover {
     color: #0077ff;
     text-decoration: underline;
@@ -302,15 +318,17 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 0 0 0;
+    /* padding: 18px 0 0 0; */
     min-height: 70px;
 }
 
 .logo {
-    font-weight: 600;
+    display: flex;
+    align-items: center;
+    /* font-weight: 600;
     font-size: 2rem;
     color: #111;
-    letter-spacing: -2px;
+    letter-spacing: -2px; */
 }
 
 .header-cta-btn {
@@ -344,8 +362,7 @@ h6 {
 }
 
 .hero-container {
-    padding-top: 20px;
-    ;
+    padding-top: 33px;
     position: relative;
     display: flex;
     gap: 20px;
@@ -365,7 +382,7 @@ h6 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 19px;
 }
 
 .heading h1 {
@@ -424,6 +441,10 @@ h6 {
     flex-direction: column;
     gap: 5px;
 
+}
+
+.feature-list-v2 {
+    margin: 9px 0 15px;
 }
 
 .feature-list li {
@@ -572,10 +593,12 @@ h6 {
     /* Gold color for stars */
     font-size: 16px;
     margin-right: 8px;
+    line-height: 100%;
 }
 
 .rating-badge .rating-text {
     font-weight: 400;
+    line-height: 100%;
 }
 
 .offer-section {
@@ -652,6 +675,7 @@ h6 {
     color: #ff3d00;
     font-weight: bold;
     font-size: 14px;
+    font-weight: 400;
 }
 
 /* Call-to-Action Button Styles */
@@ -668,10 +692,23 @@ h6 {
     align-items: center;
 }
 
+
+.comparison-grid-container .comparison-grid-header:nth-child(2) .comparison-grid-icon {
+    width: 99px;
+    height: 95px;
+}
+
+.comparison-grid-container .comparison-grid-header:nth-child(3) .comparison-grid-icon {
+    width: 75px;
+    height: 75px;
+}
+
 .cta-button {
+    max-width: 443px;
+    width: 100%;
     background-color: #12ac00;
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     padding: 15px 30px;
     border: none;
@@ -681,7 +718,10 @@ h6 {
     transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
     align-items: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "poppins", sans-serif;
+    text-decoration: none;
+
+
 }
 
 /* .cta-button:hover {
@@ -702,6 +742,7 @@ h6 {
     align-items: center;
     gap: 10px;
     font-size: 14px;
+    font-weight: 500;
     color: #000;
 }
 
@@ -1071,8 +1112,8 @@ h6 {
 .filterd-choice-cont {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+    /* align-items: center; */
+    gap: 60px;
 
 }
 
@@ -1186,6 +1227,13 @@ h6 {
     /* box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15); */
     margin-left: -14px;
     transition: transform 0.2s ease;
+}
+
+.btn-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #000000;
+    border-radius: 50%;
 }
 
 .filterd-choice-right {
@@ -1496,7 +1544,7 @@ h6 {
 
 .result-list li {
     font-size: 17px;
-    line-height: 28px;
+    line-height: 23px;
     color: #000000;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
@@ -1688,7 +1736,7 @@ h6 {
 .feature-content {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 12px;
 }
 
 .triple-filtration-feature .feature-title {
@@ -1852,6 +1900,19 @@ h6 {
     width: 100%;
     height: 1px;
     border: 1px dashed black;
+}
+
+.triple-filtration-image {
+    max-width: 244px;
+    width: 100%;
+}
+
+.nocompromise-feature .feature-title {
+    line-height: 1;
+    font-size: 24px;
+    font-family: "playfair display", serif;
+    color: #2d1d18;
+    font-weight: 900;
 }
 
 .triple-filtration-image img {
@@ -2091,6 +2152,14 @@ h6 {
     border: 1.5px solid #222;
     border-top: none;
 
+}
+
+.desktop-view-2 {
+    display: flex;
+}
+
+.mobile-view-2 {
+    display: none;
 }
 
 .comparison-grid-cell.afina.afina-last::after {
@@ -2854,7 +2923,7 @@ h6 {
 .v2-image-cont {
     max-width: 372px;
     width: 100%;
-    height: 281px;
+    height: 230px;
     border-radius: 21px;
     overflow: hidden;
 }
@@ -2899,7 +2968,7 @@ h6 {
 
 .Image-contaienr-99 img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -3025,6 +3094,17 @@ h6 {
     gap: 28px;
 }
 
+.install-img {
+    border: 2px solid #000000;
+    border-radius: 24px;
+
+}
+
+.video-carousel-swiper-2 .video-card {
+    border: 2px solid black;
+    height: 513px;
+}
+
 .nocompromise-features-v2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -3082,10 +3162,11 @@ h6 {
 }
 
 .hero-wrapper {
-    background: #f9f9f6 url(./images/afina-v2-here.png);
+    /* background: #f9f9f6 url(./images/afina-v2-here.png); */
+    background: #f9f9f6 url(./images/v2-image-hero.png);
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 50% auto;
+    background-size: 100% auto;
 }
 
 .v2-hero-mobile-img {
@@ -3206,7 +3287,7 @@ h6 {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 18px;
 }
 
 .review-dec {
@@ -3241,7 +3322,7 @@ h6 {
     bottom: 0;
     display: flex;
     justify-content: center;
-    padding: 0 30px 30px;
+    padding: 0 30px 12px;
 
 }
 
@@ -3310,45 +3391,51 @@ h6 {
         max-width: 100%;
     }
 
-    .nobody-card-content {
-        padding: 16px;
-    }
-
-    .card-heading {
-        font-size: 22px;
-        line-height: 1.3;
-    }
-
-    .nobody-card-description {
-        font-size: 16px;
-        line-height: unset;
-    }
-
-    .nobody-tell-container {
-        gap: 32px;
-    }
-
-    .filterd-choice-right {
-        width: 50%;
-    }
-
-    .real-results-seciton {
-        padding: 40px 12px;
-    }
-
-    .nocompromise-section {
-        padding: 40px 12px;
-    }
-
-    .triple-filtration-section,
-    .readyToGo_section,
-    .comparison-section,
-    .guarantee-section,
-    .install-section,
-    .afina-daily-essential-section {
-        padding: 40px 12px;
+    .meet-the-afina-filter-section::before {
+        height: 62px;
+        top: -63px;
     }
 }
+
+.nobody-card-content {
+    padding: 16px;
+}
+
+.card-heading {
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.nobody-card-description {
+    font-size: 16px;
+    line-height: unset;
+}
+
+.nobody-tell-container {
+    gap: 32px;
+}
+
+.filterd-choice-right {
+    width: 50%;
+}
+
+.real-results-seciton {
+    padding: 40px 12px;
+}
+
+.nocompromise-section {
+    padding: 40px 12px;
+}
+
+.triple-filtration-section,
+.readyToGo_section,
+.comparison-section,
+.guarantee-section,
+.install-section,
+.afina-daily-essential-section {
+    padding: 40px 12px;
+}
+
 
 @media (max-width: 1156px) {
     .stats-container {
@@ -3523,7 +3610,7 @@ h6 {
     }
 
     .hero-wrapper {
-        background-size: 66% auto;
+        background-size: 100% auto;
 
     }
 }
@@ -3583,7 +3670,7 @@ h6 {
     }
 
     .cta-button {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -3630,6 +3717,7 @@ h6 {
     }
 
     .filterd-choice-cont {
+
         flex-direction: column;
         align-items: unset;
     }
@@ -3643,7 +3731,7 @@ h6 {
     }
 
     .guarantees {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .nobody-title {
@@ -3849,7 +3937,7 @@ h6 {
     }
 
     .hero-wrapper {
-        background-size: 58% auto;
+        background-size: 100% auto;
     }
 
     .hero-container {
@@ -3870,7 +3958,8 @@ h6 {
     .feature-list li {
         padding-top: 5px;
         padding-bottom: 5px;
-        border-bottom: 1px solid #636363;
+        border-bottom: 1px solid #dadada;
+        ;
     }
 
     .feature-list li:last-child {
@@ -3954,7 +4043,7 @@ h6 {
 
     .cta-button,
     .v2-filterd-choice-left .cta-button {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .v2-filterd-choice-left .offer-section {
@@ -3990,6 +4079,16 @@ h6 {
 @media (max-width: 450px) {
     .verifyed-img-section {
         padding-top: 0;
+    }
+
+    .overlay-right {
+        gap: 1px;
+    }
+
+    .image-stack img {
+        width: 23px;
+        height: 23px;
+        margin-left: -9px;
     }
 
     .brand-image-wrapper {
@@ -4084,6 +4183,10 @@ h6 {
         justify-content: space-between;
     }
 
+    .sale-stock-status {
+        gap: 5px;
+    }
+
     .brand-image-container-gray img {
         width: 60px;
     }
@@ -4109,6 +4212,10 @@ h6 {
         height: 16px;
     }
 
+    .video-carousel-swiper-2 .video-card {
+        height: 430px;
+    }
+
     .cta-button {
         padding: 15px 15px;
         width: 100%;
@@ -4116,7 +4223,10 @@ h6 {
 
     .install-img {
         min-width: 144px;
-        height: 144px
+        height: 144px;
+        border: 2px solid #000000;
+        border-radius: 12px;
+
     }
 
     .install-img img {
@@ -4163,6 +4273,18 @@ h6 {
         width: 77%;
     }
 
+    .desktop-view-2 {
+        display: none;
+    }
+
+    .mobile-view-2 {
+        display: flex;
+    }
+
+    .meet-the-afina-filter-section::before {
+        all: unset;
+    }
+
     .triple-filtration-feature .feature-title {
         font-size: 24px;
         line-height: 20px;
@@ -4171,6 +4293,7 @@ h6 {
     .triple-filtration-feature .feature-desc {
         font-size: 14px;
         line-height: 20px;
+        width: 80%;
     }
 
     .install-step-desc {
@@ -4179,9 +4302,21 @@ h6 {
         text-align: start;
     }
 
+    .water-drop-img {
+        width: 85px;
+    }
+
+    .water-drop-img img {
+        width: 100%;
+    }
+
     .comparison-grid-title.afina {
         padding-left: 5px;
         padding-right: 5px;
+    }
+
+    .nobody-tell-wrapper {
+        padding-bottom: 30px;
     }
 
     .comparison-grid-title {
@@ -4215,9 +4350,33 @@ h6 {
         line-height: 18px;
     }
 
+
+    .comparison-grid-container .comparison-grid-header:nth-child(2) .comparison-grid-icon {
+        width: 68px;
+        height: 68px;
+    }
+
+    .comparison-grid-container .comparison-grid-header:nth-child(3) .comparison-grid-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .comparison-grid-container .comparison-grid-header:nth-child(4) .comparison-grid-icon {
+        width: 55px;
+        height: 55px;
+    }
+
     .comparison-grid-cell img {
         width: 20px;
         height: 20px;
+    }
+
+    .real-results-seciton {
+        padding-bottom: 20px;
+    }
+
+    .nocompromise-feature {
+        gap: 16px;
     }
 
     .guarantee-section {
@@ -4247,10 +4406,19 @@ h6 {
     }
 
     .guarantee-badge img {
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: 100%;
     }
 
+    .readyToGo_section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .readyToGo_feature_cont{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .guarantee-title {
         font-size: 30px;
         letter-spacing: -1px;
@@ -4258,6 +4426,25 @@ h6 {
         width: 80%;
     }
 
+    .testimonials .real-results-desc{
+        width: 70%;
+    }
+    .testimonials .real-results-title{
+        width: 80%;
+    }
+    .testimonials .sub-dec{
+        width: 84%;
+    }
+    .readyToGo_center-cont .offer-section{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .guarantee-box .guarantees{
+        gap: 6px;
+    }
+    .guarantees{
+        gap: 6px;
+    }
     .guarantee-desc {
 
         margin: 28px 0 34px 0;
@@ -4282,9 +4469,16 @@ h6 {
         z-index: -1;
     }
 
+    .triple-filtration-heading.desktop-view {
+        display: none;
+    }
 
     .client-count p {
         font-size: 12px;
+    }
+
+    .triple-filtration-image {
+        max-width: 153px;
     }
 
     .filter-coice-overlay-wrapper-mobile {
@@ -4371,6 +4565,18 @@ h6 {
         font-size: 14px;
     }
 
+    .logo img {
+        height: 28px;
+    }
+
+
+    .header-container {
+        justify-content: center;
+        padding: 0;
+        padding: 6px 0;
+        min-height: 42px;
+    }
+
     .client-count span {
         gap: 2px;
     }
@@ -4433,7 +4639,7 @@ h6 {
 
     .testimonials-bottom-card-right {
         width: 100%;
-        height: 313px;
+        /* height: 313px; */
         border-radius: 11px 11px 0 0;
     }
 
@@ -4443,8 +4649,8 @@ h6 {
     }
 
     .testimonials-bottom-card {
-        border-radius: none;
-        border: 0;
+        border: 1px solid #d0dde8;
+
     }
 
     .meet-the-afina-filter-container .filter-coice-overlay-wrapper-mobile {
@@ -4469,7 +4675,7 @@ h6 {
     .video-carousel-swiper .video-card {
         min-height: unset;
         max-height: unset;
-        height: unset;
+        height: 171px;
     }
 
     .video-card-overlay span {
@@ -4480,6 +4686,7 @@ h6 {
 
     .testimonials-bottom-card-left {
         padding: 0 20px;
+        padding-bottom: 20px;
     }
 
     .afina-user {
@@ -4514,8 +4721,9 @@ h6 {
         height: 48px;
     }
 
-    .nocompromise-feature {
-        gap: 6px;
+    .nocompromise-feature img {
+        width: 34px;
+        height: 34px;
     }
 
     .nocompromise-video-row {
